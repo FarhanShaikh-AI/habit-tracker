@@ -1,0 +1,87 @@
+/* Footer box styling */
+.footer-box {
+    background-color: #2d3e50; /* Dark background */
+    color: #fff; /* White text */
+    padding: 3rem 2rem; /* Padding for spacing */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 2rem; /* Space above the footer */
+  }
+  
+  /* Footer section titles (e.g., About Us, Quick Links, Follow Us) */
+  .footer h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff7f50; /* Highlight section titles with an accent color */
+  }
+  
+  /* Footer text content */
+  .footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc; /* Lighter text for description */
+  }
+  
+  /* Footer links */
+  .footer .nav-link {
+    color: #ffffff; /* White links */
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer .nav-link:hover {
+    color: #ff7f50; /* Hover effect: change color */
+    transform: translateY(-3px); /* Slight hover lift effect */
+  }
+  
+  /* Footer social media links styling */
+  .social-link {
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-link:hover {
+    color: #ff7f50; /* Hover effect for social links */
+  }
+  
+  /* Footer social media icons */
+  .footer-icon {
+    margin-right: 12px; /* Space between icon and text */
+    font-size: 1.5rem; /* Larger icons for better visibility */
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: #ff7f50; /* Change icon color on hover */
+  }
+  
+  /* Center the footer text */
+  .footer .text-center {
+    font-size: 1rem;
+    color: #ccc; /* Lighter color for copyright text */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer-box {
+      padding: 2rem 1rem; /* Less padding on smaller screens */
+    }
+  
+    .footer h5 {
+      font-size: 1.3rem; /* Smaller font for section titles */
+    }
+  
+    .footer .nav-link {
+      font-size: 1rem; /* Smaller font size for links */
+    }
+  
+    .footer .footer-icon {
+      font-size: 1.8rem; /* Larger icons for better visibility */
+    }
+  }
+  

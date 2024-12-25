@@ -1,0 +1,120 @@
+/* Styles for the HabitsList component */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Add Habit Button */
+.add-habit-btn {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-habit-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Habit Card */
+.habit-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.habit-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.habit-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.habit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Recommendations Section */
+.recommendations-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 22px;
+}
+
+/* No Habits Message */
+.no-habits-message {
+  font-size: 16px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .habit-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card-container {
+    gap: 10px;
+  }
+
+  .add-habit-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Styles for the progress bar */
+.progress-bar-container {
+  width: 100%; /* Full width */
+  max-width: 100%; /* Flexible with screen size */
+  margin: 10px auto; /* Add spacing and center */
+  height: 15px; /* Adjust height for responsiveness */
+  background-color: #f0f0f0; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+}
+
+.progress-bar-fill {
+  height: 100%; /* Full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Rounded corners */
+  transition: width 0.4s ease; /* Smooth transition */
+  color: white; /* Text color */
+  font-size: 12px; /* Responsive font size */
+  font-weight: bold; /* Bold text */
+}
