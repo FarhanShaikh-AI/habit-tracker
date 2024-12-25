@@ -1,0 +1,262 @@
+/* General Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+}
+
+/* Header Styling */
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.home-section h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.home-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home-section li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+  margin-right: 10px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  opacity: 0.9;
+}
+
+.button-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.home-btn {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.signup-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #218838;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styling */
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* Button Layout in Card */
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-buttons .button-primary {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.card-buttons .button-danger {
+  margin-left: auto;
+}
+
+/* Add Habit Button Styling */
+.add-habit-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-habit-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-habit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress-bar-background {
+  width: 100%;
+  height: 100%;
+  background: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: width 0.4s ease;
+  font-weight: bold;
+  color: white;
+}
+
+.progress-bar-fill span {
+  font-size: 12px;
+  z-index: 1;
+}
+
+.card .progress-bar {
+  margin-top: 10px;
+}
+
+/* Color change for inactive/active habits */
+.progress-bar-fill {
+  background: linear-gradient(90deg, #4caf50, #8bc34a); /* Green gradient for active */
+}
+
+.progress-bar-fill.inactive {
+  background: linear-gradient(90deg, #f44336, #ff5252); /* Red gradient for inactive */
+}
+
+.recommendations-container {
+  margin-top: 30px;
+}
+
+.recommendations-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.habit-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.habit-card h4 {
+  margin: 10px 0;
+}
+
+.habit-card p {
+  color: #555;
+}
