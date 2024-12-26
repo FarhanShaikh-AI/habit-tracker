@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/habits';
+const API_URL = 'https://web-production-26c6.up.railway.app/api/habits';
 const API_BASE_URL = "https://web-production-26c6.up.railway.app/";
 // Get all habits
 export const getAllHabits = async () => {
