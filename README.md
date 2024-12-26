@@ -13,10 +13,13 @@ To set up the project locally, follow these steps:
 Clone the repository:
 
 git clone https://github.com/FarhanShaikh-AI/habit-tracker.git
+
 cd habit-tracker
+
 Install Backend Dependencies: Navigate to the backend directory and install the required packages:
 
 cd backend
+
 npm install
 
 
@@ -31,6 +34,7 @@ Navigate to the frontend directory and install the required packages:
 
 
 cd ../frontend
+
 npm install
 
 
@@ -38,12 +42,14 @@ Run the Backend Server:
 Navigate back to the backend directory and start the server:
 
 cd backend
+
 node server.js
 
 Run the Frontend Application: 
 Open a new terminal, navigate to the frontend directory, and start the React app:
 
 cd ../frontend
+
 npm start
 
 
