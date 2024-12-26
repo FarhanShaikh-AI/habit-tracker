@@ -36,3 +36,22 @@ export const getHabitSuggestions = async () => {
     return [];
   }
 };
+
+
+export const fetchHabits = async () => {
+  try {
+    const response = await fetch(`${API_BASE_URL}/habits`, {
+      method: "GET",
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch habits.");
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error.message);
+    return { error: error.message };
+  }
+};
