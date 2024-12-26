@@ -10,7 +10,7 @@ const app = express();
 
 // Enable CORS for Netlify frontend (Replace 'your-netlify-domain' with your actual Netlify domain)
 app.use(cors({
-    origin: 'https://mellifluous-bavarois-f92cf5.netlify.app/', // Replace with your actual Netlify domain
+    origin: ['http://localhost:3000', 'https://mellifluous-bavarois-f92cf5.netlify.app'], // Replace with your actual Netlify domain
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));

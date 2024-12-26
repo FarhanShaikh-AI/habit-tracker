@@ -134,9 +134,7 @@ HABIT_RECOMMENDATIONS = [
 ]    
 @app.route('/generate-habit-suggestions', methods=['GET'])
 def generate_habit_suggestions():
-    """
-    Generate 3 random habit recommendations.
-    """
+
     suggestions = random.sample(HABIT_RECOMMENDATIONS, 3)
     return jsonify(suggestions)
 
