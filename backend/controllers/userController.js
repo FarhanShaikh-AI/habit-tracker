@@ -10,7 +10,7 @@ exports.getUserProfile = (req, res) => {
   }
 
   try {
-    const decoded = jwt.verify(token, "your-secret-key"); // Replace "your-secret-key" with your actual secret key
+    const decoded = jwt.verify(token, "Farhan@123$123");
     const userId = decoded.id;
 
     User.getById(userId, (err, user) => {

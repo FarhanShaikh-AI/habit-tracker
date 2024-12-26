@@ -29,7 +29,7 @@ function HabitForm({ habit, onSubmitSuccess }) {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleString());
     }, 1000);
-    return () => clearInterval(interval); // Cleanup on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   const handleChange = (e) => {

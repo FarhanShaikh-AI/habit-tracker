@@ -2,7 +2,7 @@ const db = require("../config/database");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const SECRET_KEY = "Farhan@123$123"; // Replace with a secure key
+const SECRET_KEY = "Farhan@123$123"; 
 
 // User signup
 exports.signup = (req, res) => {

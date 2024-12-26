@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // For redirection
-import { getAllHabits } from '../services/habitService'; // Assuming you have this function
+import { getAllHabits } from '../services/habitService';
 import HabitCard from './HabitCard'; // HabitCard component to display each habit
 import './Home.css';
 
@@ -29,7 +29,6 @@ function Home() {
       })
       .catch((error) => {
         console.error('Error fetching habits:', error);
-        // Optionally handle the error, e.g., set empty array or show a message
         setHabits([]);
       });
   }, []);

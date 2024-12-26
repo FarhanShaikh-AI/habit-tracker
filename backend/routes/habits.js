@@ -35,11 +35,9 @@ router.get("/api/habit-suggestions", async (req, res) => {
   }
 });
 
-// Example of how you might calculate progress in your backend
 router.get("/habit/progress/:id", (req, res) => {
   const habitId = req.params.id;
-  // Logic to calculate progress based on habit data
-  const progress = calculateProgress(habitId); // Implement this function
+  const progress = calculateProgress(habitId);
   res.status(200).json({ progress });
 });
 module.exports = router;

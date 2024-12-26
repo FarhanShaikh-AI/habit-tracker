@@ -39,7 +39,7 @@ class Habit {
   }
 
   static delete(id, callback) {
-    const query = "DELETE FROM habits WHERE habit_id = ?"; // Use habit_id instead of id
+    const query = "DELETE FROM habits WHERE habit_id = ?";
     db.query(query, [id], (err) => {
       if (err) {
         console.error("Error deleting habit:", err);

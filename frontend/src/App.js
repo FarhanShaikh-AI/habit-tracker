@@ -7,7 +7,7 @@ import HabitsList from './components/HabitsList';
 import Footer from './components/Footer';
 import Signup from "./components/Signup";
 import Login from "./components/Login";
-import UserProfile from './components/UserProfile'; // Import the UserProfile component
+import UserProfile from './components/UserProfile';
 
 import "./components/Auth.css";
 
