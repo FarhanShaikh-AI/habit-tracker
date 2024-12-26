@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://web-production-26c6.up.railway.app/api/habits';
-const API_BASE_URL = "https://web-production-26c6.up.railway.app/";
+const API_URL = 'http://localhost:5000/api/habits';
+
 // Get all habits
 export const getAllHabits = async () => {
   const response = await axios.get(API_URL);
@@ -34,24 +34,5 @@ export const getHabitSuggestions = async () => {
   } catch (error) {
     console.error('Error fetching habit suggestions:', error);
     return [];
-  }
-};
-
-
-export const fetchHabits = async () => {
-  try {
-    const response = await fetch(`${API_BASE_URL}/habits`, {
-      method: "GET",
-    });
-
-    if (!response.ok) {
-      throw new Error("Failed to fetch habits.");
-    }
-
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error.message);
-    return { error: error.message };
   }
 };
